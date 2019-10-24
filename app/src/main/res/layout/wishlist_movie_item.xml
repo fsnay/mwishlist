@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5pt">
+
+        <ImageView
+            android:id="@+id/posterWish"
+            android:padding="5pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/titleWish"
+            android:text="title wish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/posterWish"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textColor="#f1f1f1" />
+
+        <TextView
+            android:id="@+id/releaseDateWish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="releaseDate"
+            android:paddingRight="5pt"
+            app:layout_constraintTop_toBottomOf="@id/titleWish"
+            app:layout_constraintStart_toEndOf="@id/posterWish"
+            android:textColor="#f1f1f1" />
+
+        <TextView
+            android:id="@+id/voteAverageWish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="voteAverage"
+            app:layout_constraintStart_toEndOf="@id/releaseDateWish"
+            app:layout_constraintTop_toBottomOf="@id/titleWish"
+            android:textColor="#f1f1f1" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.card.MaterialCardView>

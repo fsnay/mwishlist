@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/wishlist"
+        android:icon="@drawable/ic_movie_filter_black"
+        android:title="My Wishlist"
+        android:iconTint="@color/colorAccent"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/popularMovies"
+        android:icon="@drawable/ic_whatshot_black"
+        android:iconTint="@color/colorAccent"
+        android:title="Popular"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/upcomingMovies"
+        android:icon="@drawable/ic_local_play_black"
+        android:title="Upcoming"
+        android:iconTint="@color/colorAccent"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/topRatedMovies"
+        android:icon="@drawable/ic_stars_black"
+        android:title="Top Rated"
+        app:showAsAction="always"/>
+
+</menu>

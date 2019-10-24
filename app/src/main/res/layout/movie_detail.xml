@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activity.DetailMovieActivity">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5pt"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:id="@+id/poster_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_detail"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#f1f1f1"
+            android:paddingTop="5pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/poster_detail"/>
+
+        <TextView
+            android:id="@+id/overview_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f1f1f1"
+            android:paddingTop="5pt"
+            android:paddingBottom="5pt"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            app:layout_constraintTop_toBottomOf="@id/title_detail"
+            app:layout_constraintStart_toStartOf="@id/title_detail"/>
+
+        <TextView
+            android:id="@+id/runtime_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/overview_detail"
+            app:layout_constraintStart_toStartOf="@id/overview_detail"/>
+
+        <TextView
+            android:id="@+id/statusDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5pt"
+            app:layout_constraintStart_toEndOf="@id/poster_detail"
+            app:layout_constraintTop_toBottomOf="@id/runtime_detail"
+            app:layout_constraintStart_toStartOf="@id/title_detail"
+            app:layout_constraintEnd_toStartOf="@id/release_detail"/>
+
+        <TextView
+            android:id="@+id/release_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginBottom="5pt"
+            app:layout_constraintTop_toBottomOf="@id/runtime_detail"
+            app:layout_constraintStart_toEndOf="@id/statusDetail" />
+
+        <TextView
+            android:id="@+id/voteAverageDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/poster_detail"
+            app:layout_constraintStart_toStartOf="@id/title_detail"
+            app:layout_constraintTop_toBottomOf="@id/statusDetail"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

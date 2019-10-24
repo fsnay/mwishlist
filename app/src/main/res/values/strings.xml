@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Movie Wishlist</string>
+    <string name="mListPosterBaseURL">https://image.tmdb.org/t/p/w185/</string>
+    <string name="mDetailPosterBaseURL">https://image.tmdb.org/t/p/w500/</string>
+    <string name="api_key">7dab1df51190cb00e691ed7f654d36d9</string>
+    <string name="emptyMovieList">No movies yet :(</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_drawer">MainActivityDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        tools:context=".activity.MainActivity">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:padding="5pt"
+            android:background="@color/colorPrimaryDark">
+
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:layout_marginTop="5pt"
+                android:hint="What are you watching today?"
+
+                android:singleLine="false"
+                android:textColor="@color/colorAccent"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColorHint="#f1f1f1"
+                app:layout_constraintEnd_toStartOf="@id/searchBt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/searchBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="searchMovie"
+                android:src="@drawable/ic_search_black"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:tint="@color/colorPrimaryDark"
+                app:backgroundTint="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/searchBar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:context=".activity.MainActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5pt"
+                app:layout_constraintTop_toBottomOf="@id/searchBt">
+
+                <fragment
+                    android:id="@+id/movieListFragment"
+                    android:name="com.example.moviewishlist.fragment.MovieListFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </fragment>
+            </ScrollView>
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
